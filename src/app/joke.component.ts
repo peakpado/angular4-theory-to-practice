@@ -13,10 +13,6 @@ export class JokeComponent implements OnInit, OnChanges, OnDestroy {
   @Input() joke: Joke;
   @Output() jokeDeleted = new EventEmitter<Joke>();
 
-  // constructor() {
-  //   console.log('constructor: ', this.joke);
-  // }
-
   deleteJoke() {
     this.jokeDeleted.emit(this.joke);
   }
@@ -31,18 +27,6 @@ export class JokeComponent implements OnInit, OnChanges, OnDestroy {
   ngOnInit() {
     console.log('ngOnInit: ', this.joke);
   }
-
-  // noDoCheck() {
-  //   console.log('noDoCheck: ', this.joke);
-  // }
-  //
-  // ngAfterContentInit() {
-  //   console.log('ngAfterContentInit: ', this.joke);
-  // }
-  //
-  // ngAfterViewInit() {
-  //   console.log('ngAfterViewInit:');
-  // }
 
   ngOnDestroy() {
     console.log('ngOnDestroy');

@@ -5,13 +5,15 @@ import {AppComponent} from './app.component';
 import {JokeComponent} from './joke.component';
 import {JokeFormComponent} from './joke.form.component';
 import {JokeListComponent} from './joke.list.component';
+import {CardHoverDirective} from './card.hover.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     JokeComponent,
     JokeListComponent,
-    JokeFormComponent
+    JokeFormComponent,
+    CardHoverDirective
   ],
   imports: [
     BrowserModule

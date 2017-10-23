@@ -11,8 +11,8 @@ import { JokeComponent } from './joke.component';
 <joke-form (jokeCreated)="addJoke($event)"></joke-form>
 <h4 #header>View Jokes</h4>
 <joke *ngFor="let j of jokes" [joke]="j" (jokeDeleted)="deleteJoke($event)">
-  <span class="setup">{{j.setup}}</span>
-  <h1 class="punchline">{{j.punchline}}</h1>
+  <!--<span class="setup">{{j.setup}}</span>-->
+  <!--<h1 class="punchline">{{j.punchline}}</h1>-->
 </joke>
     
     <h4>Content Jokes</h4>

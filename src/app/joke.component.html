@@ -1,11 +1,9 @@
-<div class="card card-block">
+<div class="card card-block" [ccCardHover]="{querySelector: 'p'}">
   <h4 class="card-title">
-    <!--{{joke.setup}}-->
-    <ng-content select=".setup"></ng-content>
+    {{joke.setup}}
   </h4>
-  <p class="card-text" [hidden]="joke.hide">
-    <!--{{joke.punchline}}-->
-    <ng-content select=".punchline"></ng-content>
+  <p class="card-text" [style.display]="'none'">
+    {{joke.punchline}}
   </p>
   <a (click)="joke.toggle()"
      class="btn btn-warning">Tell Me
